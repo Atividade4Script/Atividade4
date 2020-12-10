@@ -6,9 +6,7 @@
 
 const arr = [1, 2, 3, 4, 5];
 
-const arr2 = arr.map((item) => {
-    return item + 10;
-});
+const arr2 = arr.map((item) => item + 10);
 
 console.log(arr2);
 
@@ -36,10 +34,6 @@ console.log(userObj(nome));
 
 // 3.4
 
-const promise = (() => {
-    return new Promise((resolve, reject) => {
-        return resolve();
-    });
-});
+const promise = (() => new Promise((resolve) => resolve()));
 
 console.log(promise);

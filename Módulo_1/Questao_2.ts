@@ -66,26 +66,28 @@ console.log(`\n Trabalhador da Google: ${googleWorker?.nome}`);
 
 // 2.4 
 
-let doubleAgedUsers = userArray.map(function(valor, index) { 
-        {
-            valor.nome,
-            ((valor.idade) * 2),
-            valor.empresa
-        }
-});
-
-// let doubleAgedUsers2 = userArray;
-
-// doubleAgedUsers2.forEach(function(object) {
-//     object.idade *= 2;
+// let doubleAgedUsers = userArray.map(function(valor, index) { 
+//         return (
+//             {
+//                 valor.nome
+//                 ((valor.idade) * 2),
+//                 valor.empresa
+//             }
+//         )
 // });
 
+let doubleAgedUsers2 = userArray;
+
+doubleAgedUsers2.forEach(function(object) {
+    object.idade *= 2;
+});
+
 console.log('\n Array de users com idades dobradas:');
-console.log(doubleAgedUsers);
+console.log(doubleAgedUsers2);
 
 //console.log(userArray.keys);
 
-let ageUntil50 = doubleAgedUsers.filter((objeto) => objeto);
+let ageUntil50 = doubleAgedUsers2.filter((objeto) => objeto.idade <= 50);
 
 console.log('\n Array de users com até 50 anos:')
 console.log(ageUntil50);
