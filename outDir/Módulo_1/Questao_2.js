@@ -46,11 +46,13 @@ var googleWorker = userArray.find(function (objeto) { return objeto.empresa == '
 console.log("\n Trabalhador da Google: " + (googleWorker === null || googleWorker === void 0 ? void 0 : googleWorker.nome));
 // 2.4 
 // let doubleAgedUsers = userArray.map(function(valor, index) { 
-//         {
-//             valor.nome;
-//             ((valor.idade) * 2);
-//             valor.empresa;
-//         }
+//         return (
+//             {
+//                 valor.nome
+//                 ((valor.idade) * 2),
+//                 valor.empresa
+//             }
+//         )
 // });
 var doubleAgedUsers2 = userArray;
 doubleAgedUsers2.forEach(function (object) {
